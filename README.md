@@ -49,14 +49,15 @@ Weather/
 ## ⚙ Installation
 
 Clone the repo
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-cd YOUR_REPO
+git clone https://github.com/Sumitsingh39499/weather-website
+.git
+cd weather-website
 
 Install dependencies
 npm install
 
 Create `.env` file and add your API key
-API_KEY=your_api_key_here
+API_KEY=f472d8352c6c5082c9d71d392dda0a69
 
 Run server
 node index.js
@@ -74,8 +75,9 @@ API_KEY | OpenWeather API key |
 ---
 
 ## 📸 Screenshots
+<img width="1919" height="907" alt="image" src="https://github.com/user-attachments/assets/5ada7e8c-cb6b-4781-ab74-be5928ab5e32" />
 
-(Add your screenshots here)
+
 
 ---
 
