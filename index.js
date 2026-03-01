@@ -2,19 +2,21 @@ import express from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
 import pg from "pg";
+//superbase
+import dotenv from "dotenv";
+dotenv.config();
+
 //For storeing the search history in db
 const  db = new pg.Client({
-    user:"postgres",
-    host:"localhost",
-    database:"Weather",
-    password:"Sumits",
-    port:5432
+    connectionString: process.env.DATABASE_URL,
+  ssl: { rejectUnauthorized:false }
 });
 db.connect();
+console.log("db is connected")
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const apiURL = `https://api.openweathermap.org/data/2.5`;
-const yourapikey = "f472d8352c6c5082c9d71d392dda0a69";
+const yourapikey = process.env.OPENWEATHER_KEY;
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
