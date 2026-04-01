@@ -99,6 +99,3 @@ GitHub: https://github.com/Sumitsingh39499
 
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License.
